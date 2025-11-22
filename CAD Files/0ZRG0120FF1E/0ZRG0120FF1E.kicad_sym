@@ -1,0 +1,68 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "0ZRG0120FF1E" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "F" (id 0) (at -2.54 2.54 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "0ZRG0120FF1E" (id 1) (at -2.54 -4.445 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Footprint" "0ZRG0120FF1E:FUSRB510W51L690T300H1170" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MAXIMUM_PACKAGE_HEIGHT" "11.70mm" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "CREATOR" "NEZY" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "STANDARD" "IPC-7351B" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PARTREV" "Apr2023" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "VERIFIER" "" (id 8) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MANUFACTURER" "Bel Fuse" (id 9) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "0ZRG0120FF1E_0_0"
+      (polyline
+        (pts (xy 2.54 1.016) (xy 2.54 -1.016)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 -1.016) (xy -2.54 -1.016)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 -1.016) (xy -2.54 1.016)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 1.016) (xy 2.54 1.016)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 3.1496 -2.032) (xy 2.032 -2.032)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.032 -2.032) (xy -2.032 2.032)) (stroke (width 0.1524))
+      )
+      (pin passive line (at 5.08 0.0 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -5.08 0.0 0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)
