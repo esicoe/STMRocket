@@ -5,10 +5,11 @@
 	(uuid "fd47649a-639e-448c-bb16-b2061ebe97a0")
 	(paper "A4")
 	(title_block
-		(title "High Power Rocket Flight Computer - Hierarchical Page")
+		(title "STMRocket - Main Page")
+		(date "2025-12-09")
 		(rev "1")
 		(company "Edward Sicoe")
-		(comment 1 "Repository:   https://github.com/esicoe/High-Power-Rocket-Flight-Computer")
+		(comment 1 "Repository: https://github.com/esicoe/STMRocket")
 	)
 	(lib_symbols)
 	(rectangle
@@ -23,9 +24,9 @@
 		)
 		(uuid 4ce59982-3b8c-4960-898e-9d9983b5d23f)
 	)
-	(text "High Power Rocket Flight Computer"
+	(text "STMRocket (2025/12/09 by Edward S.)\n"
 		(exclude_from_sim no)
-		(at 80.264 21.336 0)
+		(at 86.868 21.59 0)
 		(effects
 			(font
 				(size 4.064 4.064)
@@ -34,6 +35,64 @@
 			)
 		)
 		(uuid "14ee7eaa-755f-4cc5-867c-0504ed9d38de")
+	)
+	(text "Project Description\n\nThis is a personal project for an STM32 flight computer that \nwill be flown on a model rocket to acheive the Level 1 high power \nrocketry certification. It is open source with details available \non the Github repository.\n\nhttps://github.com/esicoe/STMRocket\n\nCapabilities\n\nThe flight computer is able to log flight condition data, including \npressure, altitude, acceleration, gyroscope data and humidity. \nIt is powered by a 7.4V 2S LiPo battery, 3.3V from SWD, \nor through 5V USB type C.\n\nPurpose\n\nThe end goal is to use the computer to deploy a parachute through the \nPyro channel and successfully recover the rocket as well as the logged\ndata."
+		(exclude_from_sim no)
+		(at 202.692 49.022 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left)
+		)
+		(uuid "2b84fb72-e457-4a65-91a7-9970bdce83ae")
+	)
+	(text "About"
+		(exclude_from_sim no)
+		(at 211.328 23.368 0)
+		(effects
+			(font
+				(size 4.064 4.064)
+				(thickness 0.8128)
+				(bold yes)
+			)
+		)
+		(uuid "56bbe742-d76a-4d49-b16c-ab6a114967e7")
+	)
+	(text "Revision History\n"
+		(exclude_from_sim no)
+		(at 227.076 86.614 0)
+		(effects
+			(font
+				(size 4.064 4.064)
+				(thickness 0.8128)
+				(bold yes)
+			)
+		)
+		(uuid "7cffbbca-e846-41e9-80c8-7a3ee37cb94b")
+	)
+	(text "The sensors are: \n\nIMU IC (Intertial measurement units) which\ncontains a programmable gyroscope, accelerometer and \ndata filter. \n\nEnvironmental sensor that contains a programmable \npressure, humidity, and temperature measurements with\na filter.\n\nAll sensors are programmed and communicate over I2C at 100kHz. "
+		(exclude_from_sim no)
+		(at 106.68 123.952 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b7caf13a-6fc6-41e7-92fb-3572c10a799e")
+	)
+	(text "The datalogging chips are: \n\n4 Mb of NOR flash memory which is programmed and\ncommunicates over 3 wire SPI at 2MHz.\n\nThe MicroSD card does not operate in flight. It is\na way to extract the data from the onboard memory.\n"
+		(exclude_from_sim no)
+		(at 106.426 43.688 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b9f734ed-85af-4ca4-b4ad-7e7dfe153bc3")
 	)
 	(wire
 		(pts
@@ -254,6 +313,202 @@
 			(type default)
 		)
 		(uuid "d9b80997-ea98-4966-b8df-5238d0af3db8")
+	)
+	(table
+		(column_count 2)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 19.05 43.18)
+		(row_heights 5.08 6.35 6.35 6.35 6.35)
+		(cells
+			(table_cell "Date and Person\nYYYY/MM/DD"
+				(exclude_from_sim no)
+				(at 203.2 91.44 0)
+				(size 19.05 5.08)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.254)
+						(bold yes)
+					)
+					(justify top)
+				)
+				(uuid "d2887d1e-f3a1-4b61-af2d-79805be54b42")
+			)
+			(table_cell "Revision Description"
+				(exclude_from_sim no)
+				(at 222.25 91.44 0)
+				(size 43.18 5.08)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.254)
+						(bold yes)
+					)
+				)
+				(uuid "002549c1-7f95-496c-ad30-b3f1dda3727a")
+			)
+			(table_cell "Edward Sicoe @ 2025/12/09"
+				(exclude_from_sim no)
+				(at 203.2 96.52 0)
+				(size 19.05 6.35)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "fa753bf4-9a7a-434c-adba-b53da62aa2f4")
+			)
+			(table_cell "First version - v1.0"
+				(exclude_from_sim no)
+				(at 222.25 96.52 0)
+				(size 43.18 6.35)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "2c1d868a-5889-4e67-95e8-418e3d4dc97e")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 203.2 102.87 0)
+				(size 19.05 6.35)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "d2492daa-fbe4-40d5-8aed-ab14078f3cfa")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 222.25 102.87 0)
+				(size 43.18 6.35)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "780b3fd6-81cf-4e97-b22c-17cd011d04ac")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 203.2 109.22 0)
+				(size 19.05 6.35)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "74622e3d-9672-4935-8e3a-853a76f443bc")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 222.25 109.22 0)
+				(size 43.18 6.35)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "b4e41f42-9fa8-44aa-a5b6-2011f2482963")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 203.2 115.57 0)
+				(size 19.05 6.35)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "75481a91-17e6-47b5-8832-de3f0e8755f1")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 222.25 115.57 0)
+				(size 43.18 6.35)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "4b19cd06-fb84-420f-a73f-3ea22411e56f")
+			)
+		)
 	)
 	(label "3.3V & GND"
 		(at 101.6 135.89 180)
@@ -541,7 +796,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "HPRFC_Sheet3_Sensors.kicad_sch"
+		(property "Sheetfile" "STMRocket_Sheet3_Sensors.kicad_sch"
 			(at 50.8 139.0146 0)
 			(effects
 				(font
@@ -584,7 +839,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "HPRFC_Sheet4_Datalogging.kicad_sch"
+		(property "Sheetfile" "STMRocket_Sheet4_Datalogging.kicad_sch"
 			(at 50.8 62.8146 0)
 			(effects
 				(font
@@ -627,7 +882,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "HPRFC_Sheet1_MCU.kicad_sch"
+		(property "Sheetfile" "STMRocket_Sheet1_MCU.kicad_sch"
 			(at 50.8 100.9146 0)
 			(effects
 				(font
@@ -670,7 +925,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "HPRFC_Sheet2_Power&Connectors.kicad_sch"
+		(property "Sheetfile" "STMRocket_Sheet2_Power&Connectors.kicad_sch"
 			(at 127 100.9146 0)
 			(effects
 				(font

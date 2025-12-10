@@ -3125,7 +3125,7 @@
 			(uuid "19286d87-d151-43ce-a978-b6ea6c791aca")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
 					(reference "U5")
 					(unit 1)
@@ -3192,7 +3192,7 @@
 			(uuid "f3d7893b-84cc-4c6c-88c9-4e8deeacc454")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
 					(reference "#PWR038")
 					(unit 1)
@@ -3262,7 +3262,7 @@
 			(uuid "ca26585b-7c32-441e-8d99-6c5afa9dc803")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
 					(reference "C12")
 					(unit 1)
@@ -3331,7 +3331,7 @@
 			(uuid "727531ab-499f-4fcc-8260-362488ad17a2")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
 					(reference "R4")
 					(unit 1)
@@ -3467,7 +3467,7 @@
 			(uuid "c9426072-ae3f-4325-a881-9df47170f9a5")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
 					(reference "#PWR039")
 					(unit 1)
@@ -3534,7 +3534,7 @@
 			(uuid "5db6a712-2d7a-427f-a2ef-df99886cd711")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
 					(reference "#PWR035")
 					(unit 1)
@@ -3674,7 +3674,7 @@
 			(uuid "86962149-309d-493c-a15e-f5bb92c6c8d7")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
 					(reference "C21")
 					(unit 1)
@@ -3740,7 +3740,7 @@
 			(uuid "791be3df-79cc-43f8-a51b-948c56f03715")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
 					(reference "#PWR040")
 					(unit 1)
@@ -3810,7 +3810,7 @@
 			(uuid "5fd8a970-77fe-4345-92b4-09f7013c3cb3")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
 					(reference "R3")
 					(unit 1)
@@ -3880,7 +3880,7 @@
 			(uuid "2ecc6cc8-56df-4d81-9abc-ba294ea15c2c")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
 					(reference "C7")
 					(unit 1)
@@ -4037,7 +4037,7 @@
 			(uuid "67cc5fb7-10ad-4df2-b47a-adecfa654114")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
 					(reference "J6")
 					(unit 1)
@@ -4370,7 +4370,7 @@
 			(uuid "da6720fa-d53f-4be2-b1e7-3ed16aedd09c")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
 					(reference "U4")
 					(unit 1)
@@ -4504,7 +4504,7 @@
 			(uuid "d562d896-ff6c-4cec-ac3b-a53e4c520f8e")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
 					(reference "#PWR042")
 					(unit 1)
@@ -4570,7 +4570,7 @@
 			(uuid "3b756d9d-5a9c-4e97-815f-e4be689310f4")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
 					(reference "#PWR037")
 					(unit 1)

@@ -5,7 +5,7 @@
 	(uuid "4667c7ae-bccf-4eca-ac5f-a6ad7c5a8a05")
 	(paper "A4")
 	(title_block
-		(title "STMRocket - Power")
+		(title "STMRocket - Power & Connectors")
 		(date "2025-12-09")
 		(rev "1")
 		(company "Edward Sicoe")
@@ -4605,6 +4605,16 @@
 		)
 		(uuid "3189fd13-f4fd-476c-a8df-b54171cd7571")
 	)
+	(text "R7,8 ~ 1%\n"
+		(exclude_from_sim no)
+		(at 56.388 116.078 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "65a29c1f-c9b9-4dda-9611-64b3e5ae9ffc")
+	)
 	(text "USB D+ 1.5k pull-up resistor required in ST AN4879"
 		(exclude_from_sim no)
 		(at 51.816 90.932 0)
@@ -6474,7 +6484,7 @@
 			(uuid "3f41b6e0-ec73-4bb2-a3bf-0ffd1defda53")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "#PWR049")
 					(unit 1)
@@ -6718,7 +6728,7 @@
 			(uuid "e5d1fefa-3f1a-4578-9fe9-fe0503e2940f")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "#PWR025")
 					(unit 1)
@@ -7230,7 +7240,7 @@
 			(uuid "c0220824-5690-4993-9476-1681528a71cf")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "#PWR031")
 					(unit 1)
@@ -7364,7 +7374,7 @@
 			(uuid "32db1aa6-5c42-4a52-8d80-8dedd74702f4")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "#PWR016")
 					(unit 1)
@@ -7570,7 +7580,7 @@
 			(uuid "20375b30-e696-4e86-916b-52bd7dca9df7")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "J3")
 					(unit 1)
@@ -7639,7 +7649,7 @@
 			(uuid "0eb559ef-0124-4446-8025-c608fc049900")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "C1")
 					(unit 1)
@@ -7706,7 +7716,7 @@
 			(uuid "4131292b-1712-4894-8742-1b1d26d22887")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "#PWR032")
 					(unit 1)
@@ -7723,7 +7733,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3e5b5e8e-fcb7-4cd7-b74d-3608ddbe9c5b")
-		(property "Reference" "D7"
+		(property "Reference" "D6"
 			(at 255.27 33.02 0)
 			(effects
 				(font
@@ -7775,7 +7785,7 @@
 		(instances
 			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
-					(reference "D7")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -8130,7 +8140,7 @@
 			(uuid "db8c30b5-65a6-44a8-b432-4fcba70b0656")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "#PWR028")
 					(unit 1)
@@ -8195,7 +8205,7 @@
 			(uuid "44aa8ebe-729e-42f9-ad32-691a75f76d97")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "#PWR018")
 					(unit 1)
@@ -8260,7 +8270,7 @@
 			(uuid "83041f1d-a7e0-4e2d-9955-f1598cc2e2bf")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "#PWR029")
 					(unit 1)
@@ -8549,7 +8559,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8641dfc6-cfa0-463b-9162-4b4fd1e72587")
-		(property "Reference" "D5"
+		(property "Reference" "D7"
 			(at 237.49 32.512 0)
 			(effects
 				(font
@@ -8619,7 +8629,7 @@
 		(instances
 			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
-					(reference "D5")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -8682,7 +8692,7 @@
 			(uuid "e82bbf7e-affc-4457-8c9e-583259d74799")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "#FLG04")
 					(unit 1)
@@ -9103,7 +9113,7 @@
 			(uuid "503c192c-72d0-401e-9b8d-2c58df76ae28")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "R1")
 					(unit 1)
@@ -9172,7 +9182,7 @@
 			(uuid "cd4047a7-b651-496b-8f51-b6f62cd7780a")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "R1")
 					(unit 1)
@@ -9629,7 +9639,7 @@
 			(uuid "e51f1d7c-66a1-438f-945a-16c1632e255f")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "J4")
 					(unit 1)
@@ -9704,7 +9714,7 @@
 			(uuid "7ea84311-b5e9-40d3-81ac-9c65a7add956")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "Q2")
 					(unit 1)
@@ -9769,7 +9779,7 @@
 			(uuid "0dc79b8e-afed-4bf0-8371-46009cd7cf53")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "#PWR020")
 					(unit 1)
@@ -9922,7 +9932,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d8132c0e-8a8f-448b-9e4d-7106c90472cf")
-		(property "Reference" "D6"
+		(property "Reference" "D4"
 			(at 243.84 106.426 0)
 			(effects
 				(font
@@ -9992,7 +10002,7 @@
 		(instances
 			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
-					(reference "D6")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -10057,7 +10067,7 @@
 			(uuid "6138e205-3b2b-4a7f-b3a6-cdcbb09cb8cf")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
 					(reference "#PWR034")
 					(unit 1)
@@ -10215,7 +10225,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f9bd3f14-9c08-4539-ae48-e1ac081c3cd5")
-		(property "Reference" "D4"
+		(property "Reference" "D3"
 			(at 224.79 106.426 0)
 			(effects
 				(font
@@ -10285,7 +10295,7 @@
 		(instances
 			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
-					(reference "D4")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -10301,7 +10311,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fc73a9b8-98c3-43a3-b963-156726a85426")
-		(property "Reference" "D3"
+		(property "Reference" "D5"
 			(at 181.61 101.6 0)
 			(effects
 				(font
@@ -10353,7 +10363,7 @@
 		(instances
 			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/9995a840-2775-49be-9d1b-261554bf1482"
-					(reference "D3")
+					(reference "D5")
 					(unit 1)
 				)
 			)

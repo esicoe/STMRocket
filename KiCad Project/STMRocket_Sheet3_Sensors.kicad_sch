@@ -2146,7 +2146,7 @@
 			(uuid "5fc94636-1161-46c4-896a-850a3d136a13")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/2edebe6b-26f2-4c99-a94a-c35ad3b8fad3"
 					(reference "#FLG03")
 					(unit 1)
@@ -2300,7 +2300,7 @@
 			(uuid "eb03fd87-9859-4484-9f2e-6d984b3f5c23")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/2edebe6b-26f2-4c99-a94a-c35ad3b8fad3"
 					(reference "#FLG02")
 					(unit 1)
@@ -2499,7 +2499,7 @@
 			(uuid "6a3f2a84-e5a5-43dd-8538-fc772044e736")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/2edebe6b-26f2-4c99-a94a-c35ad3b8fad3"
 					(reference "#PWR03")
 					(unit 1)
@@ -2566,7 +2566,7 @@
 			(uuid "7dd943f9-faf2-4b4a-894f-96ce8bc8a773")
 		)
 		(instances
-			(project ""
+			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/2edebe6b-26f2-4c99-a94a-c35ad3b8fad3"
 					(reference "#PWR02")
 					(unit 1)
