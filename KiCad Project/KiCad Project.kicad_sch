@@ -36,7 +36,7 @@
 		)
 		(uuid "14ee7eaa-755f-4cc5-867c-0504ed9d38de")
 	)
-	(text "Project Description\n\nThis is a personal project for an STM32 flight computer that \nwill be flown on a model rocket to acheive the Level 1 high power \nrocketry certification. It is open source with details available \non the Github repository.\n\nhttps://github.com/esicoe/STMRocket\n\nCapabilities\n\nThe flight computer is able to log flight condition data, including \npressure, altitude, acceleration, gyroscope data and humidity. \nIt is powered by a 7.4V 2S LiPo battery, 3.3V from SWD, \nor through 5V USB type C.\n\nPurpose\n\nThe end goal is to use the computer to deploy a parachute through the \nPyro channel and successfully recover the rocket as well as the logged\ndata."
+	(text "Project Description\n\nThis is a personal project for an STM32 flight computer that \nwill be flown on a model rocket to acheive the Level 1 high power \nrocketry certification. It is open source with details available \non the Github repository.\n\nhttps://github.com/esicoe/STMRocket\n\nCapabilities\n\nThe flight computer is able to log flight condition data, including \npressure, altitude, acceleration, gyroscope data and humidity. \nIt is powered by a 7.4V 2S LiPo battery, 3.3V from SWD, \nor through 5V USB type B.\n\nPurpose\n\nThe end goal is to use the computer to deploy a parachute through the \nPyro channel and successfully recover the rocket as well as the logged\ndata."
 		(exclude_from_sim no)
 		(at 202.692 49.022 0)
 		(effects
@@ -72,9 +72,33 @@
 		)
 		(uuid "7cffbbca-e846-41e9-80c8-7a3ee37cb94b")
 	)
-	(text "The sensors are: \n\nIMU IC (Intertial measurement units) which\ncontains a programmable gyroscope, accelerometer and \ndata filter. \n\nEnvironmental sensor that contains a programmable \npressure, humidity, and temperature measurements with\na filter.\n\nAll sensors are programmed and communicate over I2C at 100kHz. "
+	(text "Sensors\n"
 		(exclude_from_sim no)
-		(at 106.68 123.952 0)
+		(at 57.404 111.252 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+				(thickness 0.4572)
+				(bold yes)
+			)
+		)
+		(uuid "8335b978-33e7-4b7d-941a-11d7e33837b0")
+	)
+	(text "External Memory"
+		(exclude_from_sim no)
+		(at 64.77 35.052 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+				(thickness 0.4572)
+				(bold yes)
+			)
+		)
+		(uuid "96d9460c-a071-468e-9dae-ed42e05b5343")
+	)
+	(text "- IMU IC (Intertial measurement unit) containing a \nprogrammable gyroscope, accelerometer, and a digital low \npass filter. Operates over I2C at 100 KHz with address 0x68.\n\n- Environmental sensor IC containing a programmable \npressure, humidity, and temperature measurements with\na filter. Operates over I2C at 100 KHz with address 0x76.\n\n "
+		(exclude_from_sim no)
+		(at 92.456 122.682 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -83,9 +107,9 @@
 		)
 		(uuid "b7caf13a-6fc6-41e7-92fb-3572c10a799e")
 	)
-	(text "The datalogging chips are: \n\n4 Mb of NOR flash memory which is programmed and\ncommunicates over 3 wire SPI at 2MHz.\n\nThe MicroSD card does not operate in flight. It is\na way to extract the data from the onboard memory.\n"
+	(text "- 4 Mb of NOR flash over 3-wire SPI at 1 MHz.\n\n- MicroSD connector for extracting memory from flash IC.\n"
 		(exclude_from_sim no)
-		(at 106.426 43.688 0)
+		(at 91.44 39.624 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -94,225 +118,29 @@
 		)
 		(uuid "b9f734ed-85af-4ca4-b4ad-7e7dfe153bc3")
 	)
-	(wire
-		(pts
-			(xy 33.02 90.17) (xy 50.8 90.17)
+	(text "Microcontroller"
+		(exclude_from_sim no)
+		(at 63.5 73.152 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+				(thickness 0.4572)
+				(bold yes)
+			)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "123e680a-feee-4405-ae32-c34d41f59d2e")
+		(uuid "d78b2767-b870-4357-bb6f-46454ed32c3b")
 	)
-	(wire
-		(pts
-			(xy 38.1 77.47) (xy 38.1 59.69)
+	(text "Power & Connectors"
+		(exclude_from_sim no)
+		(at 144.526 73.152 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+				(thickness 0.4572)
+				(bold yes)
+			)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19c90480-db26-4eeb-b1f5-e7bfd242ebfd")
-	)
-	(wire
-		(pts
-			(xy 38.1 59.69) (xy 50.8 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "295bef7e-1005-4561-87d0-f6445d0b6343")
-	)
-	(wire
-		(pts
-			(xy 88.9 77.47) (xy 127 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39082162-331c-4433-9ad4-251536260f52")
-	)
-	(wire
-		(pts
-			(xy 88.9 135.89) (xy 101.6 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c4d9d2a-b420-4d61-9fcb-fac62eae8789")
-	)
-	(wire
-		(pts
-			(xy 50.8 132.08) (xy 33.02 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f5fe588-b009-49f2-ab4b-036bbabfd335")
-	)
-	(wire
-		(pts
-			(xy 35.56 93.98) (xy 50.8 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48b1522e-b2ed-466a-8372-00f928fb1860")
-	)
-	(wire
-		(pts
-			(xy 165.1 97.79) (xy 177.8 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4bd295e9-7d0c-4ccf-92b2-9f8f6494b5b4")
-	)
-	(wire
-		(pts
-			(xy 33.02 132.08) (xy 33.02 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e41ad38-7918-4829-b9d1-84d9bbc4820f")
-	)
-	(wire
-		(pts
-			(xy 30.48 135.89) (xy 50.8 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5928473f-3de7-4c73-9fd9-6e4d2d82087e")
-	)
-	(wire
-		(pts
-			(xy 30.48 86.36) (xy 50.8 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c769fd9-905d-4d3c-8912-3de8ddc0854a")
-	)
-	(wire
-		(pts
-			(xy 50.8 77.47) (xy 38.1 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78d6ae42-4dad-4acd-bc8b-0cdd77b4b969")
-	)
-	(wire
-		(pts
-			(xy 88.9 81.28) (xy 127 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7bb9822b-3815-4f1e-bb6f-931cd7ed48a4")
-	)
-	(wire
-		(pts
-			(xy 38.1 115.57) (xy 50.8 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8fd8e373-296e-4551-a859-ea23365e420c")
-	)
-	(wire
-		(pts
-			(xy 35.56 119.38) (xy 50.8 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d29fbdc-8ac9-41e9-80c6-edc478b44df4")
-	)
-	(wire
-		(pts
-			(xy 30.48 86.36) (xy 30.48 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a18c1447-fbb1-471b-abcd-374385ca8ae7")
-	)
-	(wire
-		(pts
-			(xy 35.56 119.38) (xy 35.56 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad746100-2e1a-4903-8d5e-e33a158b81eb")
-	)
-	(wire
-		(pts
-			(xy 88.9 59.69) (xy 101.6 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9c36f69-344d-4e60-a6c6-961456b7728a")
-	)
-	(wire
-		(pts
-			(xy 38.1 97.79) (xy 38.1 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bae32ba7-78fe-4ebe-9cb8-e1ee8b61b92b")
-	)
-	(wire
-		(pts
-			(xy 38.1 97.79) (xy 50.8 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c896cebd-26da-4742-8885-b11a321c6901")
-	)
-	(wire
-		(pts
-			(xy 88.9 85.09) (xy 127 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d27a3972-0ab6-4f6d-8248-0f2b7e7a4788")
-	)
-	(wire
-		(pts
-			(xy 88.9 97.79) (xy 101.6 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9b80997-ea98-4966-b8df-5238d0af3db8")
+		(uuid "ee0217d1-5fdc-413d-8743-d0be6634b88b")
 	)
 	(table
 		(column_count 2)
@@ -372,7 +200,7 @@
 				)
 				(uuid "002549c1-7f95-496c-ad30-b3f1dda3727a")
 			)
-			(table_cell "Edward Sicoe @ 2025/12/09"
+			(table_cell "Edward Sicoe @ 2025/12/XX"
 				(exclude_from_sim no)
 				(at 203.2 96.52 0)
 				(size 19.05 6.35)
@@ -510,266 +338,6 @@
 			)
 		)
 	)
-	(label "3.3V & GND"
-		(at 101.6 135.89 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "16291010-0783-4543-95d4-cfd6c38f806f")
-	)
-	(label "3.3V & GND"
-		(at 177.8 97.79 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4fa17302-9eb4-496a-9305-8ef41523778d")
-	)
-	(label "3.3V & GND"
-		(at 101.6 59.69 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "804257df-e8cc-48fc-b846-8fc649c65fbb")
-	)
-	(label "3.3V & GND"
-		(at 101.6 97.79 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e22555ff-fea0-46ad-8cb2-b6ece3ef2728")
-	)
-	(hierarchical_label "Sensor clock line"
-		(shape input)
-		(at 50.8 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "000af273-8c46-4341-af7f-d37c52fe53d7")
-	)
-	(hierarchical_label "USB data"
-		(shape bidirectional)
-		(at 127 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0187529c-456f-4af8-9311-46c41aae5f3b")
-	)
-	(hierarchical_label "IMU frame sync"
-		(shape input)
-		(at 50.8 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0cea003a-99d9-4e68-a340-a261bdd0d1af")
-	)
-	(hierarchical_label "Sensor data line"
-		(shape input)
-		(at 50.8 86.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "157d64ed-4b7c-4385-ab9f-58180be5225f")
-	)
-	(hierarchical_label "Datalogging data line"
-		(shape input)
-		(at 50.8 59.69 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1ad49a0c-27de-4430-aca0-1acc620d551a")
-	)
-	(hierarchical_label "Pyro control"
-		(shape input)
-		(at 127 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "321e0492-a507-4d0b-9d71-9e0000693a23")
-	)
-	(hierarchical_label "SWD"
-		(shape output)
-		(at 127 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3d27387d-7302-4820-85f6-dc0f681458e5")
-	)
-	(hierarchical_label "Sensor clock line"
-		(shape output)
-		(at 50.8 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4063bd99-c03e-4d56-8bff-63bc108423a4")
-	)
-	(hierarchical_label "PWR"
-		(shape output)
-		(at 88.9 59.69 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "421c6159-89df-4999-b8f7-c65c56f35a8b")
-	)
-	(hierarchical_label "Sensor data line"
-		(shape bidirectional)
-		(at 50.8 135.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "461d3c9f-993d-4eb0-af62-716aa58f930e")
-	)
-	(hierarchical_label "PWR"
-		(shape input)
-		(at 88.9 97.79 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4d55a65f-a2da-4e87-bc65-7bad52288f99")
-	)
-	(hierarchical_label "IMU frame sync"
-		(shape output)
-		(at 50.8 115.57 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "65c2d188-a959-4902-8a2f-7332d54b23ae")
-	)
-	(hierarchical_label "Pyro control"
-		(shape input)
-		(at 88.9 77.47 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "976f7e45-f2d5-4ff4-b9e1-e2403db09220")
-	)
-	(hierarchical_label "PWR"
-		(shape output)
-		(at 165.1 97.79 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9805d97c-a530-4764-8c09-f64f769f3326")
-	)
-	(hierarchical_label "PWR"
-		(shape input)
-		(at 88.9 135.89 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9ceeaaed-132e-4563-b4fa-c14ee02b6184")
-	)
-	(hierarchical_label "SWD"
-		(shape output)
-		(at 88.9 85.09 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c3c37649-4a9a-47bc-b7d7-5a9edc34e700")
-	)
-	(hierarchical_label "IMU Interrupts 1 & 2"
-		(shape output)
-		(at 50.8 119.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ca40589c-71f7-4695-8449-66d590892e31")
-	)
-	(hierarchical_label "Datalogging data line"
-		(shape output)
-		(at 50.8 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d3aad3d5-e0fe-4cf1-8f5e-13d34aea8541")
-	)
-	(hierarchical_label "IMU interrupts 1 & 2"
-		(shape input)
-		(at 50.8 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d83b7173-bbaa-4003-97ac-864d6cd1cd7b")
-	)
-	(hierarchical_label "USB data"
-		(shape bidirectional)
-		(at 88.9 81.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d9e7e833-b00e-47b9-b9d5-b0d1c917d318")
-	)
 	(sheet
 		(at 50.8 113.03)
 		(size 38.1 25.4)
@@ -794,6 +362,7 @@
 					(bold yes)
 				)
 				(justify left bottom)
+				(hide yes)
 			)
 		)
 		(property "Sheetfile" "STMRocket_Sheet3_Sensors.kicad_sch"
@@ -835,8 +404,10 @@
 					(size 3.048 3.048)
 					(thickness 0.762)
 					(bold yes)
+					(color 55 76 255 1)
 				)
 				(justify left bottom)
+				(hide yes)
 			)
 		)
 		(property "Sheetfile" "STMRocket_Sheet4_Datalogging.kicad_sch"
@@ -880,6 +451,7 @@
 					(bold yes)
 				)
 				(justify left bottom)
+				(hide yes)
 			)
 		)
 		(property "Sheetfile" "STMRocket_Sheet1_MCU.kicad_sch"
@@ -923,6 +495,7 @@
 					(bold yes)
 				)
 				(justify left bottom)
+				(hide yes)
 			)
 		)
 		(property "Sheetfile" "STMRocket_Sheet2_Power&Connectors.kicad_sch"

@@ -1938,6 +1938,12 @@
 		(uuid "09b45346-e154-4b04-a37d-0ab30e064415")
 	)
 	(junction
+		(at 71.12 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ac6783e-a1cb-49fb-a0c0-39fc3ce844d4")
+	)
+	(junction
 		(at 198.12 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1974,12 +1980,6 @@
 		(uuid "8ac0eaaf-62d4-410f-8e4a-130f887e44bc")
 	)
 	(junction
-		(at 81.28 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "92748114-4f41-4c1f-ac4d-3d8d984f0c0e")
-	)
-	(junction
 		(at 243.84 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2008,6 +2008,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cf570d39-9117-4034-ac94-e923704ae07e")
+	)
+	(junction
+		(at 81.28 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc91de50-3291-44d3-aca0-f7093d1a5c22")
 	)
 	(junction
 		(at 74.93 66.04)
@@ -2053,6 +2059,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 60.96) (xy 68.58 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0921b01e-39ad-4ef0-a906-c31dd6808765")
+	)
+	(wire
+		(pts
 			(xy 238.76 39.37) (xy 238.76 41.91)
 		)
 		(stroke
@@ -2080,16 +2096,6 @@
 			(type default)
 		)
 		(uuid "135a602f-1c39-4773-8cea-980973c7758e")
-	)
-	(wire
-		(pts
-			(xy 81.28 60.96) (xy 68.58 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b256465-0bfd-4bfe-8f12-99a8ea8fd8f0")
 	)
 	(wire
 		(pts
@@ -2143,7 +2149,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 60.96) (xy 81.28 60.96)
+			(xy 71.12 60.96) (xy 90.17 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2213,6 +2219,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 74.93) (xy 71.12 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3986d0f0-955a-4c6e-be0e-671e87f86186")
+	)
+	(wire
+		(pts
 			(xy 54.61 34.29) (xy 54.61 36.83)
 		)
 		(stroke
@@ -2273,7 +2289,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 74.93) (xy 68.58 74.93)
+			(xy 58.42 74.93) (xy 71.12 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2363,6 +2379,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 71.12) (xy 81.28 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c0db53c-e13f-44b2-8702-45727cae801b")
+	)
+	(wire
+		(pts
 			(xy 193.04 64.77) (xy 198.12 64.77)
 		)
 		(stroke
@@ -2403,16 +2429,6 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 74.93) (xy 68.58 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7aa3979c-d321-43ef-aac8-e0025e99a1ab")
-	)
-	(wire
-		(pts
 			(xy 58.42 80.01) (xy 74.93 80.01)
 		)
 		(stroke
@@ -2440,6 +2456,16 @@
 			(type default)
 		)
 		(uuid "7e2e0e7e-1e55-4a3a-aae9-275a4970c3e0")
+	)
+	(wire
+		(pts
+			(xy 81.28 71.12) (xy 90.17 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8551829d-ec53-4072-a963-6191064ea455")
 	)
 	(wire
 		(pts
@@ -2523,7 +2549,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 71.12) (xy 90.17 71.12)
+			(xy 68.58 71.12) (xy 81.28 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2720,16 +2746,6 @@
 			(type default)
 		)
 		(uuid "f2b8d8ee-1314-47ad-89a3-4015ef1d3bdf")
-	)
-	(wire
-		(pts
-			(xy 81.28 85.09) (xy 81.28 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3821223-1e6e-49f8-b657-cd7d364298ac")
 	)
 	(wire
 		(pts
@@ -3228,7 +3244,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 244.8052 69.85 0)
 			(effects
 				(font
@@ -3279,7 +3295,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4b0286d8-e620-4627-a12e-fb10fbcd78c9")
-		(property "Reference" "R4"
+		(property "Reference" "R3"
 			(at 193.548 46.99 0)
 			(effects
 				(font
@@ -3333,7 +3349,7 @@
 		(instances
 			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
-					(reference "R4")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -3348,7 +3364,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4c9b9a5a-8071-4d67-8f5d-ce9a69fb0a32")
-		(property "Reference" "R6"
+		(property "Reference" "R5"
 			(at 206.502 46.99 0)
 			(effects
 				(font
@@ -3402,7 +3418,7 @@
 		(instances
 			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
-					(reference "R6")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -3570,7 +3586,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 256.2352 69.85 0)
 			(effects
 				(font
@@ -3640,7 +3656,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 136.8552 88.9 0)
 			(effects
 				(font
@@ -3758,7 +3774,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8fba1979-afdf-42bc-82b4-6ba82783effe")
-		(property "Reference" "R3"
+		(property "Reference" "R6"
 			(at 83.82 45.7199 0)
 			(effects
 				(font
@@ -3812,7 +3828,7 @@
 		(instances
 			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
-					(reference "R3")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -3846,7 +3862,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 44.1452 46.99 0)
 			(effects
 				(font
@@ -3897,7 +3913,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b816f816-f107-41aa-a2f2-3ee28f4e4081")
-		(property "Reference" "R5"
+		(property "Reference" "R4"
 			(at 200.152 53.34 0)
 			(effects
 				(font
@@ -3951,7 +3967,7 @@
 		(instances
 			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/77d54ba2-ca2c-4a76-8a14-c2168bfad133"
-					(reference "R5")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -4073,7 +4089,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 31.4452 46.99 0)
 			(effects
 				(font
