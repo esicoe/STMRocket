@@ -11,7 +11,91 @@
 		(company "Edward Sicoe")
 		(comment 1 "Repository: https://github.com/esicoe/STMRocket")
 	)
-	(lib_symbols)
+	(lib_symbols
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
 	(rectangle
 		(start 25.4 25.4)
 		(end 182.88 146.05)
@@ -23,6 +107,30 @@
 			(type none)
 		)
 		(uuid 4ce59982-3b8c-4960-898e-9d9983b5d23f)
+	)
+	(rectangle
+		(start 203.2 101.6)
+		(end 254 139.7)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9f11b697-44e5-429f-a82c-bdb7053eeffa)
+	)
+	(text "PCB Mounting Holes\n"
+		(exclude_from_sim no)
+		(at 217.424 99.314 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "0538197e-9116-4018-92a0-c6e2d305b1a4")
 	)
 	(text "STMRocket (2025/12/09 by Edward S.)\n"
 		(exclude_from_sim no)
@@ -36,9 +144,9 @@
 		)
 		(uuid "14ee7eaa-755f-4cc5-867c-0504ed9d38de")
 	)
-	(text "Project Description\n\nThis is a personal project for an STM32 flight computer that \nwill be flown on a model rocket to acheive the Level 1 high power \nrocketry certification. It is open source with details available \non the Github repository.\n\nhttps://github.com/esicoe/STMRocket\n\nCapabilities\n\nThe flight computer is able to log flight condition data, including \npressure, altitude, acceleration, gyroscope data and humidity. \nIt is powered by a 7.4V 2S LiPo battery, 3.3V from SWD, \nor through 5V USB type B.\n\nPurpose\n\nThe end goal is to use the computer to deploy a parachute through the \nPyro channel and successfully recover the rocket as well as the logged\ndata."
+	(text "Project Description\n\nThis is a personal project for an STM32 flight computer that \nwill be flown on a high power rocket to acheive the Level 1 high power \nrocketry certification. Further details are available in the repository:\n\nhttps://github.com/esicoe/STMRocket\n\nCapabilities\n\nThe computer is able to store flight data from it's two sensors:\n	- ICM42670: 6-axis IMU with a gryroscope and accelerometer.\n	- BME280: Pressure, temperature temperature and humidity sensor.\nData from the accelerometer & gyroscope is used to activate the pyro charge\nand release the rocket's parachute (single deploy configuration). Data is\nstored in a 4 megabyte flash memory chip and is offloaded from the computer\nusing MicroSD. \n\nDuring flight, the computer is powered by a 2S LiPO with an XT30 connector.\nProgramming interfaces are SWD & USB. "
 		(exclude_from_sim no)
-		(at 202.692 49.022 0)
+		(at 202.692 47.752 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -59,18 +167,6 @@
 			)
 		)
 		(uuid "56bbe742-d76a-4d49-b16c-ab6a114967e7")
-	)
-	(text "Revision History\n"
-		(exclude_from_sim no)
-		(at 227.076 86.614 0)
-		(effects
-			(font
-				(size 4.064 4.064)
-				(thickness 0.8128)
-				(bold yes)
-			)
-		)
-		(uuid "7cffbbca-e846-41e9-80c8-7a3ee37cb94b")
 	)
 	(text "Sensors\n"
 		(exclude_from_sim no)
@@ -96,28 +192,6 @@
 		)
 		(uuid "96d9460c-a071-468e-9dae-ed42e05b5343")
 	)
-	(text "- IMU IC (Intertial measurement unit) containing a \nprogrammable gyroscope, accelerometer, and a digital low \npass filter. Operates over I2C at 100 KHz with address 0x68.\n\n- Environmental sensor IC containing a programmable \npressure, humidity, and temperature measurements with\na filter. Operates over I2C at 100 KHz with address 0x76.\n\n "
-		(exclude_from_sim no)
-		(at 92.456 122.682 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b7caf13a-6fc6-41e7-92fb-3572c10a799e")
-	)
-	(text "- 4 Mb of NOR flash over 3-wire SPI at 1 MHz.\n\n- MicroSD connector for extracting memory from flash IC.\n"
-		(exclude_from_sim no)
-		(at 91.44 39.624 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b9f734ed-85af-4ca4-b4ad-7e7dfe153bc3")
-	)
 	(text "Microcontroller"
 		(exclude_from_sim no)
 		(at 63.5 73.152 0)
@@ -132,7 +206,7 @@
 	)
 	(text "Power & Connectors"
 		(exclude_from_sim no)
-		(at 144.526 73.152 0)
+		(at 144.78 74.168 0)
 		(effects
 			(font
 				(size 2.286 2.286)
@@ -142,199 +216,453 @@
 		)
 		(uuid "ee0217d1-5fdc-413d-8743-d0be6634b88b")
 	)
-	(table
-		(column_count 2)
-		(border
-			(external yes)
-			(header yes)
-			(stroke
-				(width 0)
-				(type solid)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 209.55 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "1ce3ccbf-a758-45ed-9f19-f0a5af0c7ca0")
+		(property "Reference" "H2"
+			(at 212.09 113.0299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
-		(separators
-			(rows yes)
-			(cols yes)
-			(stroke
-				(width 0)
-				(type solid)
+		(property "Value" "MountingHole"
+			(at 212.09 115.5699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
-		(column_widths 19.05 43.18)
-		(row_heights 5.08 6.35 6.35 6.35 6.35)
-		(cells
-			(table_cell "Date and Person\nYYYY/MM/DD"
-				(exclude_from_sim no)
-				(at 203.2 91.44 0)
-				(size 19.05 5.08)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 209.55 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(thickness 0.254)
-						(bold yes)
-					)
-					(justify top)
-				)
-				(uuid "d2887d1e-f3a1-4b61-af2d-79805be54b42")
+				(hide yes)
 			)
-			(table_cell "Revision Description"
-				(exclude_from_sim no)
-				(at 222.25 91.44 0)
-				(size 43.18 5.08)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
+		)
+		(property "Datasheet" "~"
+			(at 209.55 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(thickness 0.254)
-						(bold yes)
-					)
-				)
-				(uuid "002549c1-7f95-496c-ad30-b3f1dda3727a")
+				(hide yes)
 			)
-			(table_cell "Edward Sicoe @ 2025/12/XX"
-				(exclude_from_sim no)
-				(at 203.2 96.52 0)
-				(size 19.05 6.35)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 209.55 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "fa753bf4-9a7a-434c-adba-b53da62aa2f4")
+				(hide yes)
 			)
-			(table_cell "First version - v1.0"
-				(exclude_from_sim no)
-				(at 222.25 96.52 0)
-				(size 43.18 6.35)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
+		)
+		(property "Availability" ""
+			(at 209.55 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "2c1d868a-5889-4e67-95e8-418e3d4dc97e")
+				(hide yes)
 			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 203.2 102.87 0)
-				(size 19.05 6.35)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
+		)
+		(property "Price" ""
+			(at 209.55 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "d2492daa-fbe4-40d5-8aed-ab14078f3cfa")
+				(hide yes)
 			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 222.25 102.87 0)
-				(size 43.18 6.35)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
+		)
+		(property "SNAPEDA_PN" ""
+			(at 209.55 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "780b3fd6-81cf-4e97-b22c-17cd011d04ac")
+				(hide yes)
 			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 203.2 109.22 0)
-				(size 19.05 6.35)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
+		)
+		(instances
+			(project "STMRocket"
+				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0"
+					(reference "H2")
+					(unit 1)
 				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "74622e3d-9672-4935-8e3a-853a76f443bc")
 			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 222.25 109.22 0)
-				(size 43.18 6.35)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 209.55 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "21971eaa-14b0-4d78-ac7e-5e8848385ec8")
+		(property "Reference" "H4"
+			(at 212.09 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "b4e41f42-9fa8-44aa-a5b6-2011f2482963")
+				(justify left)
 			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 203.2 115.57 0)
-				(size 19.05 6.35)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
+		)
+		(property "Value" "MountingHole"
+			(at 212.09 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "75481a91-17e6-47b5-8832-de3f0e8755f1")
+				(justify left)
 			)
-			(table_cell ""
-				(exclude_from_sim no)
-				(at 222.25 115.57 0)
-				(size 43.18 6.35)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 209.55 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 209.55 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(uuid "4b19cd06-fb84-420f-a73f-3ea22411e56f")
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 209.55 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 209.55 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 209.55 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PN" ""
+			(at 209.55 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "STMRocket"
+				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 209.55 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "31c66fc7-d9e4-4a20-ac2b-79278592778a")
+		(property "Reference" "H1"
+			(at 212.09 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 212.09 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 209.55 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 209.55 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 209.55 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 209.55 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 209.55 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PN" ""
+			(at 209.55 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "STMRocket"
+				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 209.55 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "835ed90e-5f70-485b-bb96-56e626f1f08c")
+		(property "Reference" "H5"
+			(at 212.09 132.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 212.09 134.6199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 209.55 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 209.55 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 209.55 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 209.55 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 209.55 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PN" ""
+			(at 209.55 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "STMRocket"
+				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 209.55 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "f97f9760-aaf8-4770-8802-1f354485ca64")
+		(property "Reference" "H3"
+			(at 212.09 119.3799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 212.09 121.9199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 209.55 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 209.55 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 209.55 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 209.55 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 209.55 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PN" ""
+			(at 209.55 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "STMRocket"
+				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0"
+					(reference "H3")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -472,7 +800,7 @@
 		)
 	)
 	(sheet
-		(at 127 74.93)
+		(at 127 76.2)
 		(size 38.1 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -487,7 +815,7 @@
 		)
 		(uuid "9995a840-2775-49be-9d1b-261554bf1482")
 		(property "Sheetname" "Power & Connectors"
-			(at 125.984 74.422 0)
+			(at 125.984 75.692 0)
 			(effects
 				(font
 					(size 3.048 3.048)
@@ -499,7 +827,7 @@
 			)
 		)
 		(property "Sheetfile" "STMRocket_Sheet2_Power&Connectors.kicad_sch"
-			(at 127 100.9146 0)
+			(at 127 102.1846 0)
 			(effects
 				(font
 					(size 1.27 1.27)

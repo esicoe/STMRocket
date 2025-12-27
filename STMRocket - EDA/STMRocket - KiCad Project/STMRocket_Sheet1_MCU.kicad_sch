@@ -1494,89 +1494,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "H"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Mounting Hole without connection"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MountingHole_0_1"
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Oscillator:ECS-2520MV-xxx-xx"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2087,18 +2004,6 @@
 		(uuid 2747218c-8b05-4d6b-b37b-e425124ea960)
 	)
 	(rectangle
-		(start 177.8 88.9)
-		(end 228.6 127)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 4efcc913-d0ac-44bf-94a7-2e4483f5fca1)
-	)
-	(rectangle
 		(start 177.8 25.4)
 		(end 241.3 69.85)
 		(stroke
@@ -2174,18 +2079,6 @@
 		)
 		(uuid "f349e0a6-63fb-4fe7-935d-9141646ae3be")
 	)
-	(text "PCB Mounting Holes\n"
-		(exclude_from_sim no)
-		(at 192.024 86.614 0)
-		(effects
-			(font
-				(size 1.905 1.905)
-				(thickness 0.381)
-				(bold yes)
-			)
-		)
-		(uuid "f8683696-cfd2-46a8-b701-a21d3ee63ddf")
-	)
 	(junction
 		(at 102.87 38.1)
 		(diameter 0)
@@ -2259,12 +2152,6 @@
 		(uuid "4e0363e2-7eba-4ea4-b94c-0ca58c8455c9")
 	)
 	(junction
-		(at 41.91 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4ef7006b-90ae-4dc2-a205-89b97abb5f87")
-	)
-	(junction
 		(at 209.55 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2299,6 +2186,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a4673bb8-eea3-4a11-8c74-858d1ba34d1f")
+	)
+	(junction
+		(at 55.88 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa0a26e2-bbe4-42bc-a7ce-036b08402f51")
 	)
 	(junction
 		(at 95.25 46.99)
@@ -2590,16 +2483,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 74.93) (xy 41.91 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2993aa1b-f76a-4d60-a049-b11f81e570cc")
-	)
-	(wire
-		(pts
 			(xy 68.58 100.33) (xy 68.58 127)
 		)
 		(stroke
@@ -2607,6 +2490,16 @@
 			(type default)
 		)
 		(uuid "2a5eb3a2-38a9-4133-ace2-708823cfa52a")
+	)
+	(wire
+		(pts
+			(xy 55.88 62.23) (xy 80.01 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b0177ea-0dc5-46c8-b294-fb43bff3ec43")
 	)
 	(wire
 		(pts
@@ -2630,6 +2523,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 67.31) (xy 55.88 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3556f89d-0480-46ee-8a2f-cad293818494")
+	)
+	(wire
+		(pts
 			(xy 57.15 69.85) (xy 80.01 69.85)
 		)
 		(stroke
@@ -2650,7 +2553,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 62.23) (xy 35.56 62.23)
+			(xy 35.56 62.23) (xy 46.99 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2660,7 +2563,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 74.93) (xy 41.91 74.93)
+			(xy 35.56 74.93) (xy 46.99 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2697,16 +2600,6 @@
 			(type default)
 		)
 		(uuid "468a57da-b8a5-49ae-84f6-24aa71e35318")
-	)
-	(wire
-		(pts
-			(xy 41.91 62.23) (xy 41.91 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4be52af0-8f2d-4923-8550-fce438487c68")
 	)
 	(wire
 		(pts
@@ -2747,6 +2640,16 @@
 			(type default)
 		)
 		(uuid "54a1cde0-f2c2-4845-aa34-ad3b87941201")
+	)
+	(wire
+		(pts
+			(xy 55.88 67.31) (xy 55.88 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "581d15dd-8354-485f-97ae-9feaad945089")
 	)
 	(wire
 		(pts
@@ -2800,7 +2703,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 62.23) (xy 80.01 62.23)
+			(xy 54.61 62.23) (xy 55.88 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3150,16 +3053,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 62.23) (xy 46.99 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d776805c-3dc8-4dc3-9270-872124c023d8")
-	)
-	(wire
-		(pts
 			(xy 80.01 102.87) (xy 77.47 102.87)
 		)
 		(stroke
@@ -3426,28 +3319,6 @@
 			)
 		)
 	)
-	(global_label "IMU_INT1"
-		(shape input)
-		(at 57.15 95.25 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "40c1583b-740a-4f14-a27f-bf9f9733fb19")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.6981 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "STM_USB_D+"
 		(shape input)
 		(at 138.43 87.63 0)
@@ -3488,28 +3359,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "IMU_FSYNC"
-		(shape input)
-		(at 57.15 92.71 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "664efb6a-5899-4d3c-bb58-124c38e3d1da")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 43.8233 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -3558,28 +3407,6 @@
 			)
 		)
 	)
-	(global_label "IMU_INT2"
-		(shape input)
-		(at 57.15 97.79 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8d3bffec-c1b3-4a54-a346-72f0b76f39ad")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.6981 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "~{HOLD}_FLASH"
 		(shape input)
 		(at 138.43 62.23 0)
@@ -3598,6 +3425,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IMU_INT2"
+		(shape input)
+		(at 57.15 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a536929e-6e0e-4b17-97a7-ab95218f3546")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 45.6981 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3646,6 +3495,28 @@
 			)
 		)
 	)
+	(global_label "IMU_FSYNC"
+		(shape input)
+		(at 57.15 95.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b313c28e-9c57-484b-8277-492bb30f1b29")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.8233 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "STM_SCK"
 		(shape input)
 		(at 138.43 69.85 0)
@@ -3664,6 +3535,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IMU_INT1"
+		(shape input)
+		(at 57.15 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e5949207-485e-4b04-84b4-81e0be8c8d32")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 45.6981 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4196,96 +4089,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 184.15 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "1ce3ccbf-a758-45ed-9f19-f0a5af0c7ca0")
-		(property "Reference" "H2"
-			(at 186.69 100.3299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 186.69 102.8699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 184.15 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 184.15 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 184.15 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 184.15 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 184.15 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" ""
-			(at 184.15 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "STMRocket"
-				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/7b104e4e-acea-426d-8738-1db5a5a74930"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 50.8 62.23 90)
 		(unit 1)
@@ -4374,96 +4177,6 @@
 			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/7b104e4e-acea-426d-8738-1db5a5a74930"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 184.15 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "21971eaa-14b0-4d78-ac7e-5e8848385ec8")
-		(property "Reference" "H4"
-			(at 186.69 113.0299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 186.69 115.5699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 184.15 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 184.15 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 184.15 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 184.15 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 184.15 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" ""
-			(at 184.15 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "STMRocket"
-				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/7b104e4e-acea-426d-8738-1db5a5a74930"
-					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -4912,107 +4625,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 184.15 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "31c66fc7-d9e4-4a20-ac2b-79278592778a")
-		(property "Reference" "H1"
-			(at 186.69 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 186.69 96.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 184.15 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 184.15 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 184.15 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 184.15 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 184.15 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" ""
-			(at 184.15 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "STMRocket"
-				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/7b104e4e-acea-426d-8738-1db5a5a74930"
-					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 41.91 68.58 0)
+		(at 46.99 71.12 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "345d9147-ba0f-471c-a936-0d86fa269ef0")
 		(property "Reference" "C13"
-			(at 45.72 67.3099 0)
+			(at 43.18 69.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5021,7 +4644,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 45.72 69.8499 0)
+			(at 43.18 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5030,7 +4653,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 42.8752 72.39 0)
+			(at 46.0248 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5039,7 +4662,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 41.91 68.58 0)
+			(at 46.99 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5048,7 +4671,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 41.91 68.58 0)
+			(at 46.99 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5057,7 +4680,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 41.91 68.58 0)
+			(at 46.99 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5066,7 +4689,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 41.91 68.58 0)
+			(at 46.99 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5075,7 +4698,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" ""
-			(at 41.91 68.58 0)
+			(at 46.99 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5608,96 +5231,6 @@
 			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/7b104e4e-acea-426d-8738-1db5a5a74930"
 					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 184.15 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "835ed90e-5f70-485b-bb96-56e626f1f08c")
-		(property "Reference" "H5"
-			(at 186.69 119.3799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 186.69 121.9199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 184.15 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 184.15 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 184.15 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 184.15 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 184.15 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" ""
-			(at 184.15 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "STMRocket"
-				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/7b104e4e-acea-426d-8738-1db5a5a74930"
-					(reference "H5")
 					(unit 1)
 				)
 			)
@@ -6643,96 +6176,6 @@
 			(project "KiCad Project"
 				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/7b104e4e-acea-426d-8738-1db5a5a74930"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 184.15 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "f97f9760-aaf8-4770-8802-1f354485ca64")
-		(property "Reference" "H3"
-			(at 186.69 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 186.69 109.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 184.15 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 184.15 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 184.15 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 184.15 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 184.15 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" ""
-			(at 184.15 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "STMRocket"
-				(path "/fd47649a-639e-448c-bb16-b2061ebe97a0/7b104e4e-acea-426d-8738-1db5a5a74930"
-					(reference "H3")
 					(unit 1)
 				)
 			)
